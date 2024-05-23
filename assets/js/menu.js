@@ -1,7 +1,7 @@
 window.onload = function(){
     let menuState = false;
 
-    if ( localStorage.getItem('menuState') )
+    if (localStorage.getItem('menuState'))
         if(localStorage.getItem('menuState') === "1")
             menuState = true;
         else
@@ -15,7 +15,9 @@ window.onload = function(){
     let buttonTextArray = Array.from(document.getElementsByClassName("nav-button-text"));
 
     function menuUpdateFunc(){
-
+        if(doUpdate != false){
+            menuState = !menuState;
+        }
         if(menuState){
             sidebar.classList.remove('closed');
             openMenuIcon.classList.add('hidden');
@@ -32,17 +34,10 @@ window.onload = function(){
             });
         }
 
-        
-        if(doUpdate != false)
-            menuState = !menuState;
-
         if(menuState)
             localStorage.setItem('menuState', "1");
         else
             localStorage.setItem('menuState', "0");
-
-        console.log(menuState);
-        console.log(localStorage.getItem('menuState'));
     }
 
     menuUpdateFunc();
