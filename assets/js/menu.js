@@ -1,11 +1,21 @@
 window.onload = function(){
     let menuState = false;
+
+    if ( localStorage.getItem('menuState') )
+        if(localStorage.getItem('menuState') === "1")
+            menuState = true;
+        else
+            menuState = false;
+
+    let doUpdate = false;
     let menuButton = document.getElementById("menu-button");
     let sidebar = document.getElementsByClassName("sidebar").item(0);
     let closedMenuIcon = document.getElementById("closed-menu-icon");
     let openMenuIcon = document.getElementById("open-menu-icon");
     let buttonTextArray = Array.from(document.getElementsByClassName("nav-button-text"));
+
     function menuUpdateFunc(){
+
         if(menuState){
             sidebar.classList.remove('closed');
             openMenuIcon.classList.add('hidden');
@@ -21,9 +31,22 @@ window.onload = function(){
                 element.classList.add('hidden-animated');
             });
         }
-        menuState = !menuState;
+
+        
+        if(doUpdate != false)
+            menuState = !menuState;
+
+        if(menuState)
+            localStorage.setItem('menuState', "1");
+        else
+            localStorage.setItem('menuState', "0");
+
+        console.log(menuState);
+        console.log(localStorage.getItem('menuState'));
     }
+
     menuUpdateFunc();
+    doUpdate = true;
     menuButton.onclick = menuUpdateFunc;
 };
  

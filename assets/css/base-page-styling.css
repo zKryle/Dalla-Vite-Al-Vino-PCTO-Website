@@ -288,7 +288,9 @@ hr{
     #portfolio-pic{
         aspect-ratio: 1;
         margin: 0px 10px 0px 10px;
-        height: 80px;
+        max-height: 80px;
+        max-width: 80px;
+        min-height: 80px;
         border-radius: 50%;
         border: #e15b4f solid 3px;
         box-shadow: #e15b4f 0px 0px 10px;
