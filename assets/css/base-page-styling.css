@@ -148,8 +148,8 @@ hr{
 }
 
 #portfolio-pic{
-    height: 55%;
-    min-height: 100px;
+    height: 75%;
+    min-height: 80px;
     aspect-ratio: 1;
     border-radius: 50%;
     border: #e15b4f solid 3px;
@@ -161,12 +161,13 @@ hr{
 
 #site-body {
     display: flex;
+    flex-flow: column nowrap;
     padding: 0px 15px 0 15px;
     width: 100%;
     min-height: 100% !important;
     height: min-content;
     background-color: #666666; 
-    flex-direction: column;
+    
     gap: 5px;
     flex: 1 0 0;
 }
