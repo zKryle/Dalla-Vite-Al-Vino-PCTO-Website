@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.cdnfonts.com/css/museo-sans-rounded');
+
+.header-container, .subheader-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.header-container > p {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    text-shadow:
+    #f8f4e3 -1px -1px 0px,
+    #f8f4e3 -1px 1px 0px,
+    #f8f4e3 1px -1px 0px,
+    #f8f4e3 1px 1px 1px,
+    #e15b4f 0px 0px 15px;
+    color: #e15b4f;
+    height: min-content;
+    font-size: 4rem;
+}
+
+.subheader-container > p {
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 900;
+    margin: 0;
+    color: lightgray;
+    text-shadow: 0 0 5px;
+}
+
+.h2{
+    justify-content: left;
+}
+
+.h2 > p{
+    font-size: 3rem;
+    
+}
+
+.text-formatting{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-formatting > p{
+    margin: 0;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 1.5rem;
+    text-shadow:#e15b4f 0px 0px 5px;
+    color: #f8f4e3;
+    
+}
+
+@media only screen and (max-width: 991px){
+    .header-container > p {
+        font-size: 2.35rem;
+    }
+
+    .h2 > p{
+        font-size: 2.05rem;
+    }
+}
