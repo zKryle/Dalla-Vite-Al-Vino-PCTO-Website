@@ -335,6 +335,10 @@ hr{
         background-color: #666666; 
     }
 
+    #menu-button{
+        display: none;
+    }
+
     #closed-menu-icon{
         display: none;
     }
