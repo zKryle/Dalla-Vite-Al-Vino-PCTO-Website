@@ -51,11 +51,11 @@
 
 @media only screen and (max-width: 991px){
     .header-container > p {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
 
     .h2 > p{
-        font-size: 1.35rem;
+        font-size: 1.05rem;
     }
 
     .text-formatting > p{
