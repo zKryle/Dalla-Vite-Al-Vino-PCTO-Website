@@ -1,23 +1,37 @@
-.photo-text-column{
-    display: flex;
-    flex-direction: row;
-    
+.site-section{
+    width: 55%;
 }
 
-.text-column{
-    flex: 3;
+.text-formatting{
+    width: 100%;
 }
 
 .photo-container{
     display: flex;
     flex-direction: column;
-    gap: 10%;
-    flex: 1;
+    width: 30%;
+    gap: 10px;
+    padding-right: 15px;
+    float: left;
 }
 
 .photo-container > img{
     box-shadow: #cb7169 0px 0px 7px;
     border: #cb7169 solid 2px;
-    width: 100%;
     aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.photo-text-column{
+    width: 100%;
+}
+
+.photo-text-column > .text-formatting > p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 991px){
+    .site-section{
+        width: 100%;
+    }
 }

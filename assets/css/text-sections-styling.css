@@ -40,26 +40,25 @@
     
 }
 
-.text-formatting{
-    display: flex;
-    flex-direction: column;
-}
-
 .text-formatting > p{
     margin: 0;
     font-family: 'Museo Sans Rounded', sans-serif;
     font-size: 1.5rem;
     text-shadow:#e15b4f 0px 0px 5px;
     color: #f8f4e3;
-    
+    width: 100%;
 }
 
 @media only screen and (max-width: 991px){
     .header-container > p {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .h2 > p{
-        font-size: 1.65rem;
+        font-size: 1.35rem;
+    }
+
+    .text-formatting > p{
+        font-size: 0.95rem;
     }
 }

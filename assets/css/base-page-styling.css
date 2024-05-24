@@ -162,8 +162,10 @@ hr{
 #site-body {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     padding: 0px 15px 0 15px;
     width: 100%;
+    max-width: 100%;
     min-height: 100% !important;
     height: min-content;
     background-color: #666666; 
