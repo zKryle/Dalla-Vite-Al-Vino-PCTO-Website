@@ -1,5 +1,5 @@
 window.onload = function(){
-    let menuState = false;
+    let menuState = true;
 
     if (localStorage.getItem('menuState'))
         if(localStorage.getItem('menuState') === "1")
